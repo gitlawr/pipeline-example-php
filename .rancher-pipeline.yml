@@ -5,6 +5,8 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: php-example:${CICD_EXECUTION_SEQUENCE}
+    env:
+      MIRROR: "https://registry.docker-cn.com"
 - name: Deploy
   steps:
   - applyYamlConfig:
