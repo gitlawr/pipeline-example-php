@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: php
-        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        image: ${CICD_LOCAL_REGISTRY}/php-example:${CICD_EXECUTION_SEQUENCE}
         ports:
         - containerPort: 80
