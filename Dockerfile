@@ -1,2 +1,2 @@
-FROM scratch
-CMD ["echo"]
+FROM busybox
+CMD ["sh"]
